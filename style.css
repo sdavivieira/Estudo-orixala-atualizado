@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: black; /* Definindo o fundo do corpo como preto */
+  color: white; /* Definindo a cor do texto como branco */
+}
+
+#quiz-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#options-container {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#result-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagemResultado {
+  max-width: 50%;
+  height: auto;
+  margin: 10px;
+}
+
+#question-container {
+  color: rgb(8, 7, 7); /* Cor do texto dentro da div de pergunta */
+}
+
+#options-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo da div de opções com transparência */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Adicione outras estilizações conforme necessário */

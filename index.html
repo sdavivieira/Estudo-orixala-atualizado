@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Perguntas e Respostas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="security-questions">
+    <h1>Bem-vindo ao Jogo de Perguntas e Respostas!</h1>
+    <h2>Este jogo foi desenvolvido exclusivamente para os médiuns que estão estudando para Orixalá e afins.
+        Seguido o critério da Umbanda Bantu Amerindío</h2>
+    <h3>Tudo que será perguntado aqui não é uma regra, mas sim uma dica e auxílio. Não existe verdade absoluta na Umbanda e sim a sua fé no que acredita e confia.</h3>
+    <p>Para começar, responda às perguntas de segurança:</p>
+
+    <label for="question1">Quais são os 3 símbolos de Oxalá?</label>
+    <br />
+    <br />
+    <textarea id="question1" rows="4" cols="50" required></textarea>
+    <br />
+    <br />
+    <label for="question2">Quais são as 7 linhas da nossa Umbanda?</label>
+    <br />
+    <br />
+    <textarea id="question2" rows="4" cols="50" required></textarea>
+    <br />
+    <br />
+    <button id="security-questions-button">Verificar Resposta</button>
+    <br />
+    <button id="start-game-button" style="display: none;" onclick="startGame()">Iniciar Jogo</button>
+</div>
+
+  <div id="quiz-container" style="display: none;">
+  <div id="quiz-container">
+    <div id="question-container">
+      <div id="question-text"></div>
+      <div id="category"></div>
+      <!-- Adicionando a nova div para as imagens -->
+      <div id="images-container"></div>
+    </div>
+    <div id="options-container"></div>
+    <button id="prev-button" style="display: none;">Pergunta Anterior</button>
+    <button id="next-button"> Responda para ir para próxima pergunta</button>
+  </div>
+
+  <div id="result-container" style="display: none;">
+    <h2>Resultado:</h2>
+    <p id="score">Acertos: 0 / 10</p>
+    <button id="restart-button">Reiniciar Jogo</button>
+    <button id="show-wrong-questions-button">Mostrar Erros</button>
+    <div id="wrong-questions-container" style="display: none;">
+      <h3>Respostas Incorretas:</h3>
+      <ul id="wrong-questions-list"></ul>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
